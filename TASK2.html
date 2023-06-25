@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Implementation of form elements - drop down which accepts more than one course">
+    <title>Coding Task 2</title>    
+    <style>
+        h1{
+            padding-left: 40px;
+        }
+        .form-group {
+            margin: 20px;
+          }
+          
+          label {
+            display: block;
+            font-weight: bold;
+          }
+          
+          input, select {
+            width: 100%;
+            padding: 5px;
+            font-size: 16px;
+          }
+          
+          input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+          }
+          
+          input[type="submit"]:hover {
+            background-color: #45a049;
+          }
+
+    </style>
+</head>
+<body>
+    <h1>Course Selection Form</h1>
+  <form>
+    <div class="form-group">
+      <label for="name">Name: *</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="courses">Courses:</label>
+      <select id="courses" name="courses" multiple>
+        <option value="course1">Full Stack Developer</option>
+        <option value="course2">Java Developer</option>
+        <option value="course3">Python Developer</option>
+        <option value="course4">Data Analyst</option>
+        <option value="course5">Devops</option>
+        <option value="course6">AI</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</body>
+</html>

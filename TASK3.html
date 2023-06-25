@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Implementation of Custom properties of CSS">
+    <title>Coding Task 3</title>    
+    <style>
+        :root {
+            --bg-color: rgb(164, 231, 252);
+            --font-family: Arial, sans-serif;
+            --font-color: darkslateblue;
+          }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', ;
+        }         
+        .custom {
+            background-color: var(--bg-color);
+            font-family: var(--font-family);
+            color: var(--font-color);
+          }
+          
+        .custom:hover {
+            background-color: var(--font-color);
+            color: var(--bg-color);
+          }  
+    </style>
+</head>
+<body>
+    <h1>Custom Properties - Example</h1>
+    <p class="normal">This is a normal paragraph</p>
+  <p class="custom">This is a paragraph with custom properties.</p>
+ 
+</body>
+</html>

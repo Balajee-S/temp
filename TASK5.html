@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Implementation of Pseudo Classes / Elements - Placeholder & hover">
+    <title>Coding Task 5</title>    
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: sans-serif;         
+            background-color:aquamarine;
+            
+        }
+        h1,label,input, button {
+            margin: 6px;
+        }
+
+        .simpleform ::placeholder{
+            color: red;
+            font-style: italic;
+        }
+        button:hover {
+            background-color: blue;
+            color: white;
+          }     
+
+    </style>
+</head>
+<body>
+ <!-- Pseudo class - Hover & Pseuod Element Placeholder- Example --> 
+  <h1>Enroll your Name</h1>
+  <form action="" class="simpleform">
+    <label for="name" >Name: *</label><br>
+    <input type="text" placeholder="Type your Name" required><br>
+  <button>Submit</button>
+  </form>
+
+</body>
+</html>
